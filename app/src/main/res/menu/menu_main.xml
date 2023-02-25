@@ -3,8 +3,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.thwnotizetb.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_etb"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/etb"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_notiz"
+        android:orderInCategory="100"
+        android:title="@string/notiz"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_datapicker"
+        android:orderInCategory="100"
+        android:title="@string/kalender"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_diensta"
+        android:orderInCategory="100"
+        android:title="@string/dienstausweis"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_links"
+        android:orderInCategory="100"
+        android:title="@string/links"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tresor"
+        android:orderInCategory="100"
+        android:title="@string/tresor"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_archiv"
+        android:orderInCategory="100"
+        android:title="@string/archiv"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_service"
+        android:orderInCategory="100"
+        android:title="@string/einstellung"
+        app:showAsAction="never" />
+    <item
+    android:id="@+id/action_impressum"
+    android:orderInCategory="100"
+    android:title="@string/impressum"
+    app:showAsAction="never" />
 </menu>

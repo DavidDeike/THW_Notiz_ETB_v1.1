@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="etb">ETB</string>
+    <string name="notiz">Notiz</string>
+    <string name="kalender">Kalender</string>
+    <string name="dienstausweis">Dienstausweis</string>
+    <string name="links">Links</string>
+    <string name="tresor">Tresor</string>
+    <string name="archiv">Archiv</string>
+    <string name="einstellung">Einstellung</string>
+    <string name="impressum">Impressum</string>
+</resources>
