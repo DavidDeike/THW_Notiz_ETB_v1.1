@@ -21,10 +21,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/thw_2_svg"
-        android:contentDescription="TODO"
-        tools:ignore="ContentDescription" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/thw20"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/logo2_iv"
@@ -41,36 +40,47 @@
         app:srcCompat="@drawable/logo_thw_blau_1" />
 
     <Button
-        android:id="@+id/start_bt"
+        android:id="@+id/etb_bt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:fontFamily="sans-serif-black"
-        android:shadowColor="#000000"
-        android:shadowDx="60"
-        android:shadowDy="60"
-        android:shadowRadius="120"
-        android:text="Start"
+        android:text="Einsatztagebuch"
+        android:textColor="#003399"
+        app:backgroundTint="#80FFFF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/notiz_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Notiz"
         android:textColor="#003399"
         app:backgroundTint="#80FFFF00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etb_bt"
+        app:layout_constraintVertical_bias="0.005"
         app:strokeColor="#000000"
         app:strokeWidth="1dp"
         tools:ignore="VisualLintButtonSize" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-
-
-

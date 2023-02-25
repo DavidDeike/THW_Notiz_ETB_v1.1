@@ -22,61 +22,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/thw20" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#D8D8D8"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/thw20"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/logo2_iv"
         android:layout_width="181dp"
         android:layout_height="51dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="222dp"
+        android:layout_marginLeft="222dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_thw_blau_1" />
 
     <Button
-        android:id="@+id/notizetb_tv"
+        android:id="@+id/notizetb_bt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="197dp"
+        android:layout_marginTop="232dp"
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
-        android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif-black"
         android:text="Notiz / ETB"
         android:textColor="#003399"
         app:backgroundTint="#80FFFF00"
-        app:layout_constraintBottom_toTopOf="@+id/kalender_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
-        android:id="@+id/kalender_tv"
+        android:id="@+id/kalender_bt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
         android:layout_marginBottom="8dp"
@@ -84,15 +74,16 @@
         android:text="Kalender"
         android:textColor="#003399"
         app:backgroundTint="#80FFFF00"
-        app:layout_constraintBottom_toTopOf="@+id/d_a_s_tv"
+        app:layout_constraintBottom_toTopOf="@+id/d_a_s_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notizetb_tv"
+        app:layout_constraintTop_toBottomOf="@+id/notizetb_bt"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
-        android:id="@+id/d_a_s_tv"
+        android:id="@+id/d_a_s_bt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -107,9 +98,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kalender_tv"
+        app:layout_constraintTop_toBottomOf="@+id/kalender_bt"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/tesor_bt"
@@ -128,10 +120,11 @@
         app:layout_constraintBottom_toTopOf="@+id/links_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/d_a_s_tv"
+        app:layout_constraintTop_toBottomOf="@+id/d_a_s_bt"
         app:layout_constraintVertical_bias="0.0"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/links_bt"
@@ -150,7 +143,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tesor_bt"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/service_bt"
@@ -165,13 +159,12 @@
         android:text="Einstellung"
         android:textColor="#003399"
         app:backgroundTint="#80FFFF00"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/links_bt"
-        app:layout_constraintVertical_bias="0.0"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
