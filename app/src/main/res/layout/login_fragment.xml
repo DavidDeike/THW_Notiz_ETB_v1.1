@@ -7,7 +7,7 @@
     android:background="#F1ECE1">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo_iv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="80dp"
@@ -22,7 +22,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/thw_2_svg" />
+        app:srcCompat="@drawable/thw20"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -37,16 +39,84 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo2_iv"
         android:layout_width="181dp"
         android:layout_height="51dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo_thw_blau_1" />
+
+    <EditText
+        android:id="@+id/PersonName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/Email_tv"
+        app:layout_constraintEnd_toEndOf="@+id/Email_tv"
+        app:layout_constraintStart_toStartOf="@+id/Email_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <EditText
+        android:id="@+id/Email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_iv"
+        app:layout_constraintEnd_toEndOf="@+id/password_tv"
+        app:layout_constraintStart_toStartOf="@+id/password_tv"
+        app:layout_constraintTop_toTopOf="@+id/logo_iv" />
+
+    <EditText
+        android:id="@+id/password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Passwort"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email_tv"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginRight="155dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#000000"
+        android:shadowDx="60"
+        android:shadowDy="60"
+        android:shadowRadius="120"
+        android:text="Log-In"
+        android:textColor="#003399"
+        app:backgroundTint="#80FFFF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

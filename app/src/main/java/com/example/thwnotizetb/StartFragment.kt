@@ -11,7 +11,7 @@ import com.example.thwnotizetb.databinding.StartFragmentBinding
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class StartFragment : Fragment() {
 
     private var _binding: StartFragmentBinding? = null
 
@@ -32,9 +32,8 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.Start.setOnClickListener {
-            findNavController().navigate(R.id.a)
-        }
+        binding.startBt.setOnClickListener {
+            findNavController().navigate(R.id.action_StartFragment_to_LogInFragment)}
     }
 
     override fun onDestroyView() {
