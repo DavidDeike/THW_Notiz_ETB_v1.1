@@ -28,15 +28,13 @@ class LogInFragment : Fragment() {
         return binding.root
 
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.loginBt.setOnClickListener {
-           findNavController().navigate(R.id.action_LogInFragment_to_menueFragment)
+           findNavController().navigate(R.id.action_loginFragment22_to_menueFragment)
         }
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

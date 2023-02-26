@@ -33,7 +33,7 @@ class StartFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.startBt.setOnClickListener {
-            findNavController().navigate(R.id.action_StartFragment_to_LogInFragment)}
+            findNavController().navigate(R.id.action_StartFragment_to_loginFragment22)}
     }
 
     override fun onDestroyView() {
