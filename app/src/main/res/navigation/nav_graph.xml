@@ -3,26 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/StartFragment">
+    app:startDestination="@id/startFragment">
 
-    <fragment
-        android:id="@+id/StartFragment"
-        android:name="com.example.thwnotizetb.StartFragment"
-        android:label="THW Einsatztagebuch">
-
-        <action
-            android:id="@+id/action_StartFragment_to_LogInFragment"
-            app:destination="@id/LogInFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/LogInFragment"
-        android:name="com.example.thwnotizetb.LogInFragment"
-        android:label="Log-In"
-        tools:layout="@layout/fragment_second">
-        <action
-            android:id="@+id/action_LogInFragment_to_menueFragment"
-            app:destination="@id/menueFragment" />
-    </fragment>
     <fragment
         android:id="@+id/menueFragment"
         android:name="com.example.thwnotizetb.Home"
@@ -35,4 +17,24 @@
         android:id="@+id/notizEtbFragment"
         android:name="com.example.thwnotizetb.NotizEtbFragment"
         android:label="ETB / Notiz" />
+    <fragment
+        android:id="@+id/loginFragment22"
+        android:name="com.example.thwnotizetb.ui.login.LoginFragment2"
+        android:label="Log-In"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment22_to_menueFragment"
+            app:destination="@id/menueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thwSplScreenFragment"
+        android:name="com.example.thwnotizetb.ThwSplScreenFragment"/>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.thwnotizetb.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment22"
+            app:destination="@id/loginFragment22" />
+    </fragment>
 </navigation>

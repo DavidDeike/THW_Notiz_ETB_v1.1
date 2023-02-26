@@ -2,9 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1ECE1">
+    android:background="#F1ECE1"
+    tools:context=".ui.login.LoginFragment2">
 
     <ImageView
         android:id="@+id/logo_iv"
@@ -16,14 +18,14 @@
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
         android:layout_marginBottom="80dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/thw20"
-        android:contentDescription="TODO"
+        app:srcCompat="@drawable/thw_2_svg"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -41,84 +43,80 @@
         app:srcCompat="@drawable/logo_thw_blau_1" />
 
     <EditText
-        android:id="@+id/PersonName_tv"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        android:layout_width="wrap_content"
+        android:id="@+id/username"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/lubalin"
         android:hint="Name"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#546E7A"
-        app:guidelineUseRtl="false"
-        app:layout_constraintBottom_toTopOf="@+id/Email_tv"
-        app:layout_constraintEnd_toEndOf="@+id/Email_tv"
-        app:layout_constraintStart_toStartOf="@+id/Email_tv"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.90999997" />
-
-    <EditText
-        android:id="@+id/Email_tv"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
+        android:selectAllOnFocus="true"
         android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_iv"
-        app:layout_constraintEnd_toEndOf="@+id/password_tv"
-        app:layout_constraintStart_toStartOf="@+id/password_tv"
-        app:layout_constraintTop_toTopOf="@+id/logo_iv" />
-
-    <EditText
-        android:id="@+id/password_tv"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Passwort"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email_tv"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/lubalin"
+        android:hint="@string/prompt_password"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/login_bt"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="sans-serif-black"
-        android:shadowColor="#000000"
-        android:shadowDx="60"
-        android:shadowDy="60"
-        android:shadowRadius="120"
+        android:layout_gravity="start"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="64dp"
+        android:enabled="false"
+        android:fontFamily="@font/lubalin2"
         android:text="Log-In"
         android:textColor="#003399"
+        android:textSize="20sp"
         app:backgroundTint="#80FFFF00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.819"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="TextSizeCheck" />
 
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-
-
-
