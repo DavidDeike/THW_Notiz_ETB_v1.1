@@ -9,4 +9,11 @@
     <string name="archiv">Archiv</string>
     <string name="einstellung">Einstellung</string>
     <string name="impressum">Impressum</string>
+    <string name="Dienst">Dienst</string>
+    <string name="label_note_list" />
+    <string name="label_note_detail" />
+    <string name="label_add_note" />
+    <string name="label_edit_note" />
+    <string name="label_delete_note" />
+    <string name="label_search_notes" />
 </resources>

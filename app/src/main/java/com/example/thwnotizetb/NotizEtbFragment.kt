@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.thwnotizetb.databinding.NotizetbFragmentBinding
 
 class NotizEtbFragment : Fragment() {
@@ -27,7 +28,7 @@ class NotizEtbFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.notizBt.setOnClickListener {
-            // findNavController().navigate(R.id.action_)
+            findNavController().navigate(R.id.action_notizEtbFragment_to_mobile_navigation)
         }
         binding.etbBt.setOnClickListener {
             // findNavController().navigate(R.id.action_)

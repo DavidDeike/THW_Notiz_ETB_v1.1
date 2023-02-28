@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="249dp"
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
         android:fontFamily="@font/lubalin2"

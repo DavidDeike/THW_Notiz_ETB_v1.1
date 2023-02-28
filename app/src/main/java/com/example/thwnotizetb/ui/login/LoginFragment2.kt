@@ -12,6 +12,7 @@ import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.thwnotizetb.R
 import com.example.thwnotizetb.databinding.LoginFragmentBinding
 
@@ -107,10 +108,15 @@ class LoginFragment2 : Fragment() {
     }
 
     private fun updateUiWithUser(model: LoggedInUserView) {
-        val welcome = "Willkommen bei der THW ETB APP"+ model.displayName
+        val welcome = "Willkommen bei der THW ETB APP" + model.displayName
         // TODO : initiate successful logged in experience
         val appContext = context?.applicationContext ?: return
-        Toast.makeText(appContext, welcome, Toast.LENGTH_LONG).show()
+
+        binding.loginBt.setOnClickListener {
+            Toast.makeText(appContext, welcome, Toast.LENGTH_LONG).show()
+            findNavController().navigate(R.id.action_loginFragment22_to_menueFragment)
+        }
+
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {

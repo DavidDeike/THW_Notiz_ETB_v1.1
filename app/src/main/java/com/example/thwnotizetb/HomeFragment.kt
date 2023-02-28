@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.thwnotizetb.databinding.MenueFragmentBinding
 
-class Home : Fragment() {
+class HomeFragment : Fragment() {
 
     private var _binding: MenueFragmentBinding? = null
 
