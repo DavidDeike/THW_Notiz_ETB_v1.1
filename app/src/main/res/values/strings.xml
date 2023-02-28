@@ -62,4 +62,10 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="todo">TODO</string>
+    <string name="Dienst">Dienst</string>
+    <string name="note_detail_text" />
+    <string name="note_detail_id" />
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="notes_not_found" />
 </resources>

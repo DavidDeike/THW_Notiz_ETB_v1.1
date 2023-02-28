@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/menueFragment"
-        android:name="com.example.thwnotizetb.Home"
+        android:name="com.example.thwnotizetb.HomeFragment"
         android:label="Home" >
         <action
             android:id="@+id/action_menueFragment_to_notizEtbFragment"
