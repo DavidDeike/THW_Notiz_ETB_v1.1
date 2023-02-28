@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
-    override fun onCreate(savedInstanceState: Bundle?): Boolean {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
         setContentView(androidx.activity.R.layout.activity_main)
@@ -65,14 +65,14 @@ class MainActivity : AppCompatActivity() {
         return navigateUp(
             Navigation.findNavController(
                 this,
-                androidx.activity.R.id.nav_host_fragment
+                androidx.activity.R.id.view_tree_on_back_pressed_dispatcher_owner
             ), drawerLayout
         )
     }
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+        if (dr.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START)
         } else {
             @Suppress("DEPRECATION")
@@ -87,8 +87,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(this, navController, drawerLayout)
 
 
-        navigationView.setNavigationItemSelectedListener { menuItem ->
-            menuItem.isChecked = true
+        navigationView.setNavigationItemSelectedListener { menuItem -> menuItem.isChecked = true
             drawerLayout.closeDrawers()
             true
         }
