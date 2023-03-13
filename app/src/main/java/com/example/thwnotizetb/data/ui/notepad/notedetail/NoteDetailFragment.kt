@@ -6,8 +6,6 @@ package com.example.thwnotizetb.data.ui.notepad.notedetail
 
 
 
-import com.example.thwnotizetb.data.model.notepad.Note
-import NoteDetailViewModel
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +16,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.thwnotizetb.R
+import com.example.thwnotizetb.data.model.notepad.Note
 import com.google.android.material.snackbar.Snackbar
 
 

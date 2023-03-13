@@ -1,4 +1,4 @@
-
+package com.example.thwnotizetb.data.ui.notepad.addnote
 
 
 
@@ -6,6 +6,7 @@
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.thwnotizetb.data.model.notepad.NotesManager
 
 class AddNoteViewModel : ViewModel() {
     private val status = MutableLiveData<Boolean>()

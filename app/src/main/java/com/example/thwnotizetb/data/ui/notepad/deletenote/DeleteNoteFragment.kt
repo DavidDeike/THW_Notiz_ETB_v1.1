@@ -1,13 +1,11 @@
 package com.example.thwnotizetb.data.ui.notepad.deletenote
 
-import DeleteNoteViewModel
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModel
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.thwnotizetb.R
@@ -30,21 +28,22 @@ class DeleteNoteFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(DeleteNoteViewModel::class.java)
-        viewModel.observableCurrentNote.observe(viewLifecycleOwner, Observer { currentNote ->
+        viewModel = ViewModel.of(this).get(DeleteNoteViewModel::class.java)
+
+        viewModel.observableCurrentNote.observe(viewLifecycleOwner, { currentNote ->
             currentNote?.let { initCurrentNote(currentNote) }
         })
-        viewModel.observableDeleteStatus.observe(viewLifecycleOwner, Observer { deleteStatus ->
+        viewModel.observableDeleteStatus.observe(viewLifecycleOwner, { deleteStatus ->
             deleteStatus?.let { render(deleteStatus) }
         })
 
         viewModel.initNote(args.noteId)
 
-        cancelDeleteButton.setOnClickListener {
+        cancel_bt.setOnClickListener {
             findNavController(it).popBackStack()
         }
 
-        confirmDeleteButton.setOnClickListener {
+        cDelete_bt.setOnClickListener {
             viewModel.deleteNote(args.noteId)
         }
     }
@@ -62,7 +61,7 @@ class DeleteNoteFragment : Fragment() {
                 }
             }
             false -> Snackbar.make(
-                confirmDeleteButton,
+                cDelete_bt,
                 R.string.error_deleting_note,
                 Snackbar.LENGTH_LONG
             ).show()

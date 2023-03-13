@@ -4,14 +4,10 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
 import androidx.core.view.WindowCompat
-import androidx.navigation.Navigation
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI.navigateUp
-import androidx.navigation.ui.NavigationUI.setupWithNavController
-import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.thwnotizetb.databinding.ActivityMainBinding
 
@@ -23,22 +19,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
-        setContentView(androidx.activity.R.layout.activity_main)
-        setSupportActionBar(toolbar)
-        setupNavigation()
+        setContentView(R.layout.activity_main)
+       // setupNavigation()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
 
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        val navController : NavController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
-
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -61,18 +52,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return navigateUp(
-            Navigation.findNavController(
-                this,
-                androidx.activity.R.id.view_tree_on_back_pressed_dispatcher_owner
-            ), drawerLayout
-        )
-    }
+   //override fun onSupportNavigateUp(): Boolean {
+   //     return navigateUp(
+   //         Navigation.findNavController(
+     //           this,
+       //         androidx.activity.R.id.view_tree_on_back_pressed_dispatcher_owner
+         //   ), drawerLayout
+        //)
+    //}
 
-    @Deprecated("Deprecated in Java")
+  /*  @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        if (dr.isDrawerOpen(GravityCompat.START)) {
+        if (drawable.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START)
         } else {
             @Suppress("DEPRECATION")
@@ -94,5 +85,5 @@ class MainActivity : AppCompatActivity() {
 
 
         setupWithNavController(navigationView, navController)
-    }
+    }*/
 }

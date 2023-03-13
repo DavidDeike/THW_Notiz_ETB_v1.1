@@ -32,7 +32,7 @@
         tools:text="Note text" />
 
     <Button
-        android:id="@+id/cancelDeleteButton"
+        android:id="@+id/cancel_bt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lubalin2"
@@ -40,14 +40,14 @@
         android:textColor="#003399"
         app:backgroundTint="#80FFFF00"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/confirmDeleteButton"
+        app:layout_constraintEnd_toStartOf="@+id/cDelete_bt"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
     <Button
-        android:id="@+id/confirmDeleteButton"
+        android:id="@+id/cDelete_bt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lubalin2"
@@ -56,7 +56,7 @@
         app:backgroundTint="#80FFFF00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cancelDeleteButton"
+        app:layout_constraintStart_toEndOf="@+id/cancel_bt"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 

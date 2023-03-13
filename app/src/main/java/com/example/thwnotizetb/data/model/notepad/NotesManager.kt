@@ -1,4 +1,4 @@
-import com.example.thwnotizetb.data.model.notepad.Note
+package com.example.thwnotizetb.data.model.notepad
 
 object NotesManager {
     private val notes = mutableMapOf<Int, String>()

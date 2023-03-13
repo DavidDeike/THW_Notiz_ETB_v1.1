@@ -74,4 +74,5 @@
     <string name="label_edit_note" />
     <string name="label_delete_note" />
     <string name="label_search_notes" />
+    <string name="error_validating_note" />
 </resources>
