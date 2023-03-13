@@ -1,4 +1,4 @@
-package com.example.thwnotizetb.data.ui.notepad.notelist
+package com.example.thwnotizetb.data
 
 
 

@@ -44,7 +44,8 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
     <Button
         android:id="@+id/deleteNoteButton"
@@ -58,6 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editNoteButton"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
