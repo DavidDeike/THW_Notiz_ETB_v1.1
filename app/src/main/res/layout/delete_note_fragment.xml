@@ -8,7 +8,7 @@
     android:background="#99F1ECE1">
 
     <TextView
-        android:id="@+id/noteIdView"
+        android:id="@+id/noteId_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lubalin"
@@ -20,7 +20,7 @@
         tools:text="Note id" />
 
     <TextView
-        android:id="@+id/noteText"
+        android:id="@+id/notetext_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lubalin"
@@ -28,7 +28,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/noteIdView"
+        app:layout_constraintTop_toBottomOf="@id/noteId_tv"
         tools:text="Note text" />
 
     <Button

@@ -1,7 +1,7 @@
 package com.example.thwnotizetb.data.model.notepad
 
 object NotesManager {
-    private val notes = mutableMapOf<Int, String>()
+  /* private val notes = mutableMapOf<Int, String>()
 
     fun getNoteList(): List<Note> = notes.map { Note(it.key, it.value) }
 
@@ -28,5 +28,5 @@ object NotesManager {
 
     private fun validateText(noteText: String) {
         require(noteText.isNotBlank()) { "com.example.thwnotizetb.data.model.notepad.Note text cannot be blank" }
-    }
+    }*/
 }

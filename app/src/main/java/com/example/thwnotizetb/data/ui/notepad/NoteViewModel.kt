@@ -3,8 +3,6 @@ package com.example.thwnotizetb.data.ui.notepad
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.thwnotizetb.data.model.notepad.Note
-import com.example.thwnotizetb.data.model.notepad.NotesManager
 
 class NoteViewModel : ViewModel() {
 
@@ -14,7 +12,7 @@ class NoteViewModel : ViewModel() {
     val observableStatus: LiveData<Boolean>
     get() = status
 
-    fun addNote(noteText: String) {
+  /* fun addNote(noteText: String) {
         status.value = try {
             NotesManager.addNote(noteText)
             true
@@ -82,7 +80,7 @@ class NoteViewModel : ViewModel() {
 
     fun load() {
         noteList.value = NotesManager.getNoteList()
-    }
+    }*/
 
 
 

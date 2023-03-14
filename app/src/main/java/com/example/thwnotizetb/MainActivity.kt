@@ -25,9 +25,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
+       setSupportActionBar(binding.toolbar)
 
-        val navController : NavController = findNavController(R.id.nav_host_fragment_content_main)
+        val navController : NavController = findNavController(R.id.nav_graph)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
     }
@@ -51,39 +51,4 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
-
-   //override fun onSupportNavigateUp(): Boolean {
-   //     return navigateUp(
-   //         Navigation.findNavController(
-     //           this,
-       //         androidx.activity.R.id.view_tree_on_back_pressed_dispatcher_owner
-         //   ), drawerLayout
-        //)
-    //}
-
-  /*  @Deprecated("Deprecated in Java")
-    override fun onBackPressed() {
-        if (drawable.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            @Suppress("DEPRECATION")
-            super.onBackPressed()
-        }
-    }
-
-    private fun setupNavigation() {
-        val navController =
-            Navigation.findNavController(this, androidx.activity.R.id.nav_host_fragment)
-
-        setupActionBarWithNavController(this, navController, drawerLayout)
-
-
-        navigationView.setNavigationItemSelectedListener { menuItem -> menuItem.isChecked = true
-            drawerLayout.closeDrawers()
-            true
-        }
-
-
-        setupWithNavController(navigationView, navController)
-    }*/
 }

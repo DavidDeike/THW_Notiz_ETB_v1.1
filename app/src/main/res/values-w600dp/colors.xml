@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="reinwhite">#F1ECE1</color>
     <color name="Ultramarinblau">#003399</color>
     <color name="Gelb">#FFFF00</color>
     <color name="Cyan_voll">#00FFFF</color>

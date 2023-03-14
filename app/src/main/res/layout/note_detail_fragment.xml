@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:background="#99F1ECE1">
+    android:layout_margin="0dp"
+    android:background="@color/reinwhite">
 
     <TextView
-        android:id="@+id/noteIdView"
+        android:id="@+id/noteId_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lubalin"
+        android:fontFamily="@font/open_sans_semibold"
         android:text="@string/note_detail_id"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,22 +20,27 @@
         tools:text="Note id" />
 
     <TextView
-        android:id="@+id/noteText"
+        android:id="@+id/notetext_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lubalin"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/open_sans"
         android:text="@string/note_detail_text"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/noteIdView"
+        app:layout_constraintTop_toBottomOf="@id/noteId_tv"
         tools:text="Note text" />
 
     <Button
         android:id="@+id/editNoteButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lubalin2"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:fontFamily="@font/open_sans_bold"
         android:text="Bearbeiten"
         android:textColor="#003399"
         app:backgroundTint="#80FFFF00"
@@ -51,7 +56,11 @@
         android:id="@+id/deleteNoteButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lubalin2"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/open_sans_bold"
         android:text="Löschen"
         android:textColor="#003399"
         app:backgroundTint="#80FFFF00"
