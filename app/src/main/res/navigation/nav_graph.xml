@@ -12,6 +12,12 @@
         <action
             android:id="@+id/action_menueFragment_to_notizEtbFragment"
             app:destination="@id/notizEtbFragment" />
+        <action
+            android:id="@+id/action_menueFragment_to_linkFragment2"
+            app:destination="@id/linkFragment2" />
+        <action
+            android:id="@+id/action_menueFragment_to_serviceFragment2"
+            app:destination="@id/serviceFragment2" />
     </fragment>
     <fragment
         android:id="@+id/notizEtbFragment"
@@ -39,4 +45,14 @@
             app:destination="@id/loginFragment22" />
     </fragment>
     <include app:graph="@navigation/mobile_navigation" />
+    <fragment
+        android:id="@+id/linkFragment2"
+        android:name="com.example.thwnotizetb.LinkFragment"
+        android:label="fragment_link"
+        tools:layout="@layout/fragment_link" />
+    <fragment
+        android:id="@+id/serviceFragment2"
+        android:name="com.example.thwnotizetb.ServiceFragment"
+        android:label="fragment_service"
+        tools:layout="@layout/fragment_service" />
 </navigation>

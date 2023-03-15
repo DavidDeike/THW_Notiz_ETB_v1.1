@@ -40,10 +40,10 @@ class HomeFragment : Fragment() {
             // findNavController().navigate(R.id.action_)
         }
         binding.linksBt.setOnClickListener {
-            // findNavController().navigate(R.id.action_)
+             findNavController().navigate(R.id.linkFragment2)
         }
         binding.serviceBt.setOnClickListener {
-            // findNavController().navigate(R.id.action_)
+            findNavController().navigate(R.id.serviceFragment2)
         }
     }
 
