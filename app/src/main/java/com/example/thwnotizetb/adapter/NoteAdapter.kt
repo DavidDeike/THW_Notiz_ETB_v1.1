@@ -25,7 +25,7 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.ItemViewHolder>() {
 
     @SuppressLint("NotifyDataSetChanged")
     fun submitList(noteList: List<Note>) {
-        dataset = noteList
+        noteList.also { dataset = it }
         notifyDataSetChanged()
     }
 

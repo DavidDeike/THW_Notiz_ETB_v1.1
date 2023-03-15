@@ -1,19 +1,18 @@
 package com.example.thwnotizetb
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.thwnotizetb.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}
+
+   /* private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-       setSupportActionBar(binding.toolbar)
+       //setSupportActionBar(binding.toolbar)
 
         val navController : NavController = findNavController(R.id.nav_graph)
         appBarConfiguration = AppBarConfiguration(navController.graph)
@@ -50,5 +49,4 @@ class MainActivity : AppCompatActivity() {
             R.id.action_tresor -> true
             else -> super.onOptionsItemSelected(item)
         }
-    }
-}
+    }*/

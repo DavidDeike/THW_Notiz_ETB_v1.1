@@ -18,4 +18,5 @@
     <string name="label_search_notes" />
     <string name="error_validating_note" />
     <string name="error_deleting_note" />
+    <string name="Link1">THW_link1</string>
 </resources>

@@ -4,10 +4,7 @@ buildscript {
     repositories {
         google()
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
-        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3'
-    }
+
 }
 plugins {
     id 'com.android.application' version '7.4.2' apply false
