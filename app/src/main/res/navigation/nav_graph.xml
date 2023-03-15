@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
+    android:label="nav"
     app:startDestination="@id/startFragment">
 
     <fragment
         android:id="@+id/menueFragment"
         android:name="com.example.thwnotizetb.HomeFragment"
-        android:label="Home" >
+        android:label="Home">
         <action
             android:id="@+id/action_menueFragment_to_notizEtbFragment"
             app:destination="@id/notizEtbFragment" />
@@ -22,7 +23,7 @@
     <fragment
         android:id="@+id/notizEtbFragment"
         android:name="com.example.thwnotizetb.NotizEtbFragment"
-        android:label="ETB / Notiz" >
+        android:label="ETB / Notiz">
         <action
             android:id="@+id/action_notizEtbFragment_to_mobile_navigation"
             app:destination="@id/mobile_navigation" />
@@ -39,7 +40,7 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.example.thwnotizetb.StartFragment"
-        android:label="StartFragment" >
+        android:label="Start">
         <action
             android:id="@+id/action_startFragment_to_loginFragment22"
             app:destination="@id/loginFragment22" />
