@@ -30,14 +30,13 @@
         android:layout_width="181dp"
         android:layout_height="51dp"
         android:layout_marginStart="222dp"
-        android:layout_marginLeft="222dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_thw_blau_1" />
+        app:srcCompat="@drawable/logo_thw_blau_1"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/notizetb_bt"
@@ -59,7 +58,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#000000"
         app:strokeWidth="1dp"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
     <Button
         android:id="@+id/kalender_bt"
@@ -82,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/notizetb_bt"
         app:strokeColor="#000000"
         app:strokeWidth="1dp"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
     <Button
         android:id="@+id/d_a_s_bt"
@@ -104,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/kalender_bt"
         app:strokeColor="#000000"
         app:strokeWidth="1dp"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
     <Button
         android:id="@+id/tesor_bt"
@@ -128,7 +127,7 @@
         app:layout_constraintVertical_bias="0.0"
         app:strokeColor="#000000"
         app:strokeWidth="1dp"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
     <Button
         android:id="@+id/links_bt"
@@ -149,19 +148,17 @@
         app:layout_constraintTop_toBottomOf="@+id/tesor_bt"
         app:strokeColor="#000000"
         app:strokeWidth="1dp"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
     <Button
         android:id="@+id/service_bt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
         android:fontFamily="@font/lubalin2"
-        android:text="Einstellung"
+        android:text="GPS"
         android:textColor="#003399"
         android:textSize="20sp"
         app:backgroundTint="#80FFFF00"
@@ -170,7 +167,7 @@
         app:layout_constraintTop_toBottomOf="@+id/links_bt"
         app:strokeColor="#000000"
         app:strokeWidth="1dp"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

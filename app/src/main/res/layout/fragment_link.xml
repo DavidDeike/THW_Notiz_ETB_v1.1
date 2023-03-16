@@ -37,12 +37,13 @@
             android:layout_height="51dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="2dp"
-            android:layout_marginRight="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.091"
-            app:srcCompat="@drawable/logo_thw_blau_1" />
+            app:srcCompat="@drawable/logo_thw_blau_1"
+            android:contentDescription="@string/LmS"
+            tools:ignore="ContentDescription" />
 
         <Button
             android:id="@+id/link1_bt"
@@ -57,7 +58,7 @@
             android:fontFamily="@font/open_sans_semibold"
             android:linksClickable="true"
             android:onClick="https://www.thw.de"
-            android:text="Bundesanstallt Techniches Hilfswerk"
+            android:text="@string/bundesanstallt_techniches_hilfswerk"
             android:textColor="#003399"
             android:textSize="18sp"
             app:backgroundTint="#80FFFF00"
@@ -66,7 +67,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false" />
+            app:toggleCheckedStateOnClick="false"
+            tools:ignore="OnClick,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/link2_bt"
@@ -77,7 +79,7 @@
             android:fontFamily="@font/open_sans_semibold"
             android:linksClickable="true"
             android:onClick="https://extranet.thw.de/cae/servlet/path/common/LoginPages;jsessionid=E02CBDBDA3BDFA986E63B448A500D32C.2_cid379?view=renderLogin"
-            android:text="Extranet THW"
+            android:text="@string/extranet_thw"
             android:textColor="#003399"
             android:textSize="18sp"
             app:backgroundTint="#80FFFF00"
@@ -86,7 +88,8 @@
             app:layout_constraintStart_toStartOf="@+id/link1_bt"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false" />
+            app:toggleCheckedStateOnClick="false"
+            tools:ignore="OnClick,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/link3_bt"
@@ -106,7 +109,8 @@
             app:layout_constraintStart_toStartOf="@+id/link2_bt"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false" />
+            app:toggleCheckedStateOnClick="false"
+            tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/link4_bt"
@@ -126,7 +130,8 @@
             app:layout_constraintStart_toStartOf="@+id/link3_bt"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false" />
+            app:toggleCheckedStateOnClick="false"
+            tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/link5_bt"
@@ -146,7 +151,8 @@
             app:layout_constraintStart_toStartOf="@+id/link4_bt"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false" />
+            app:toggleCheckedStateOnClick="false"
+            tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.appcompat.widget.Toolbar

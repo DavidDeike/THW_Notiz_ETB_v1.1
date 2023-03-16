@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/thw_2_svg"
         android:contentDescription="TODO"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <ImageView
         android:id="@+id/logo2_iv"
@@ -39,7 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_thw_blau_1" />
+        app:srcCompat="@drawable/logo_thw_blau_1"
+        tools:ignore="ContentDescription,RtlHardcoded" />
 
     <Button
         android:id="@+id/start_bt"
@@ -65,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#000000"
         app:strokeWidth="1dp"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

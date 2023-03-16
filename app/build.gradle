@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.thwnotizetb"
-        minSdk 16
+        minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -32,7 +32,6 @@ android {
     }
     buildFeatures {
         dataBinding true
-        viewBinding true
     }
     buildToolsVersion '33.0.1'
     ndkVersion '25.1.8937393'

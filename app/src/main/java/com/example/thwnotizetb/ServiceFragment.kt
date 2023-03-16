@@ -1,59 +1,76 @@
 package com.example.thwnotizetb
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 /**
- * A simple [Fragment] subclass.
- * Use the [ServiceFragment.newInstance] factory method to
- * create an instance of this fragment.
+ * Constants Values
  */
-class ServiceFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+const val LOCATION_REQUEST = 100
+const val LOCATION_PERMISSION_REQUEST = 101
 
+class ServiceFragment: Fragment(){
+
+  /* private lateinit var locationViewModel: LocationViewModel
+    private var isGPSEnabled = false
+
+    private val locationPermissions = arrayOf(
+        Manifest.permission.ACCESS_FINE_LOCATION,
+        Manifest.permission.ACCESS_COARSE_LOCATION
+    )
+    /**
+     * onCreate of activity
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+        setContentView(R.layout.main_activity)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_service, container, false)
-    }
+        // Instance of LocationViewModel
+        locationViewModel = ViewModelProviders.of(this).get(LocationViewModel::class.java)
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ServiceFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ServiceFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+
+        //Check weather Location/GPS is ON or OFF
+        LocationUtil(this).turnGPSOn(object :
+            LocationUtil.OnLocationOnListener {
+
+            override fun locationStatus(isLocationOn: Boolean) {
+                this@MainActivity.isGPSEnabled = isLocationOn
             }
+        })
     }
+    /**
+     * Observe LocationViewModel LiveData to get updated location
+     */
+    private fun observeLocationUpdates() {
+        locationViewModel.getLocationData.observe(this, Observer {
+            longitude.text = it.longitude.toString()
+            latitude.text = it.latitude.toString()
+            info.text = getString(R.string.location_successfully_received)
+        })
+    }
+
+
+    /**
+     * onStart lifecycle of activity
+     */
+    override fun onStart() {
+        super.onStart()
+        startLocationUpdates()
+    }
+
+
+    /**
+     * Initiate Location updated by checking Location/GPS settings is ON or OFF
+     * Requesting permissions to read location.
+     */
+    private fun startLocationUpdates() {
+        when {
+            !isGPSEnabled -> {
+                info.text = getString(R.string.enable_gps)
+            }
+
+
+
+*/
+
 }
