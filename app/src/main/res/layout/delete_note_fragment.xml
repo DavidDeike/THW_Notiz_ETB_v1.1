@@ -1,65 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:background="#99F1ECE1">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/noteId_tv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lubalin"
-        android:text="@string/note_detail_id"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Note id" />
+    <data>
 
-    <TextView
-        android:id="@+id/notetext_tv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lubalin"
-        android:text="@string/note_detail_text"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/noteId_tv"
-        tools:text="Note text" />
+    </data>
 
-    <Button
-        android:id="@+id/cancel_bt"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lubalin2"
-        android:text="Abbrechen"
-        android:textColor="#003399"
-        app:backgroundTint="#80FFFF00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cDelete_bt"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#000000"
-        app:strokeWidth="1dp"
-        tools:ignore="HardcodedText,VisualLintButtonSize" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="#99F1ECE1">
 
-    <Button
-        android:id="@+id/cDelete_bt"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lubalin2"
-        android:text="Löschen bestätigen"
-        android:textColor="#003399"
-        app:backgroundTint="#80FFFF00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cancel_bt"
-        app:strokeColor="#000000"
-        app:strokeWidth="1dp"
-        tools:ignore="HardcodedText,VisualLintButtonSize" />
+        <TextView
+            android:id="@+id/noteId_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lubalin"
+            android:text="@string/note_detail_id"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Note id" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/notetext_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lubalin"
+            android:text="@string/note_detail_text"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/noteId_tv"
+            tools:text="Note text" />
+
+        <Button
+            android:id="@+id/cancel_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lubalin2"
+            android:text="Abbrechen"
+            android:textColor="#003399"
+            app:backgroundTint="#80FFFF00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cDelete_bt"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/cDelete_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lubalin2"
+            android:text="Löschen bestätigen"
+            android:textColor="#003399"
+            app:backgroundTint="#80FFFF00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cancel_bt"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

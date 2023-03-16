@@ -42,7 +42,7 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.ItemViewHolder>() {
     // hier findet der Recyclingprozess statt
     // die vom ViewHolder bereitgestellten Parameter werden verändert
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val noteList = dataset[position]
+        dataset[position]
 
        /*holder.image.load(rec.image) {
             transformations(CircleCropTransformation())

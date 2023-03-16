@@ -1,73 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#F1ECE1"
-    tools:layout= "@layout/start_fragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:id="@+id/logo_iv"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginBottom="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/thw_2_svg"
-        android:contentDescription="TODO"
-        tools:ignore="ContentDescription,HardcodedText" />
+    <data>
 
-    <ImageView
-        android:id="@+id/logo2_iv"
-        android:layout_width="181dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="222dp"
-        android:layout_marginLeft="222dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_thw_blau_1"
-        tools:ignore="ContentDescription,RtlHardcoded" />
+    </data>
 
-    <Button
-        android:id="@+id/start_bt"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="@font/lubalin2"
-        android:shadowColor="#000000"
-        android:shadowDx="60"
-        android:shadowDy="60"
-        android:shadowRadius="120"
-        android:text="Start"
-        android:textColor="#003399"
-        android:textSize="20sp"
-        app:backgroundTint="#80FFFF00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#000000"
-        app:strokeWidth="1dp"
-        tools:ignore="HardcodedText,VisualLintButtonSize" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1ECE1"
+        tools:layout="@layout/start_fragment">
+
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/thw_2_svg"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <ImageView
+            android:id="@+id/logo2_iv"
+            android:layout_width="181dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="222dp"
+            android:layout_marginLeft="222dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_thw_blau_1"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/start_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/lubalin2"
+            android:shadowColor="#000000"
+            android:shadowDx="60"
+            android:shadowDy="60"
+            android:shadowRadius="120"
+            android:text="Start"
+            android:textColor="#003399"
+            android:textSize="20sp"
+            app:backgroundTint="#80FFFF00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
 
 
 

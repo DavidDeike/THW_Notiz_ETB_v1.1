@@ -1,164 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ServiceFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <data>
+
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F1ECE1">
+        tools:context=".ServiceFragment">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginEnd="80dp"
-            android:layout_marginRight="80dp"
-            android:layout_marginBottom="80dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/thw20"
-            tools:ignore="ContentDescription" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1ECE1">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/thw20"
+                tools:ignore="ContentDescription" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="181dp"
-            android:layout_height="51dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/logo_thw_blau_1"
-            tools:ignore="ContentDescription" />
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/gps_bt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:backgroundTint="#80FFFF00"
-            android:text="@string/gps"
-            android:textColor="@color/Ultramarinblau"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-            app:layout_constraintVertical_bias="0.284"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
-            tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="181dp"
+                android:layout_height="51dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/logo_thw_blau_1"
+                tools:ignore="ContentDescription" />
 
-        <com.google.android.material.chip.ChipGroup
-            android:layout_width="141dp"
-            android:layout_height="46dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.215"
-            app:layout_constraintStart_toEndOf="@+id/gps_bt"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.255"
-            tools:ignore="TextSizeCheck">
+            <Button
+                android:id="@+id/gps_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:backgroundTint="#80FFFF00"
+                android:text="@string/gps"
+                android:textColor="@color/Ultramarinblau"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+                app:layout_constraintVertical_bias="0.284"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                tools:ignore="MissingConstraints" />
 
-            <Switch
-                android:id="@+id/on_sw"
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="141dp"
+                android:layout_height="46dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.215"
+                app:layout_constraintStart_toEndOf="@+id/gps_bt"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.255"
+                tools:ignore="TextSizeCheck">
+
+                <Switch
+                    android:id="@+id/on_sw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/on"
+                    tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+
+                <Switch
+                    android:id="@+id/off_sw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/off"
+                    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml,VisualLintBounds" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/laenge_tv"
+                android:layout_width="118dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Längengrad :"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/lz_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.412"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gps_bt"
+                app:layout_constraintVertical_bias="0.51"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/lz_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="48dp"
-                android:text="@string/on"
-                tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="@string/_10_00000000"
+                android:textColorHint="#1B5E20"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/breit_tv"
+                app:layout_constraintEnd_toEndOf="@+id/laenge_tv"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/laenge_tv"
+                app:layout_constraintTop_toBottomOf="@+id/laenge_tv"
+                tools:ignore="MissingConstraints" />
 
-            <Switch
-                android:id="@+id/off_sw"
+            <TextView
+                android:id="@+id/breit_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="48dp"
-                android:text="@string/off"
-                tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml,VisualLintBounds" />
-        </com.google.android.material.chip.ChipGroup>
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Breitengrad :"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/bz_tv"
+                app:layout_constraintEnd_toEndOf="@+id/laenge_tv"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/laenge_tv"
+                app:layout_constraintTop_toBottomOf="@+id/lz_tv"
+                tools:ignore="HardcodedText,MissingConstraints" />
 
-        <TextView
-            android:id="@+id/laenge_tv"
-            android:layout_width="118dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:text="Längengrad :"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/lz_tv"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.412"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gps_bt"
-            app:layout_constraintVertical_bias="0.51"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/lz_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:hint="@string/_10_00000000"
-            android:textColorHint="#1B5E20"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/breit_tv"
-            app:layout_constraintEnd_toEndOf="@+id/laenge_tv"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/laenge_tv"
-            app:layout_constraintTop_toBottomOf="@+id/laenge_tv"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/breit_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:text="Breitengrad :"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/bz_tv"
-            app:layout_constraintEnd_toEndOf="@+id/laenge_tv"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/laenge_tv"
-            app:layout_constraintTop_toBottomOf="@+id/lz_tv"
-            tools:ignore="HardcodedText,MissingConstraints" />
-
-        <TextView
-            android:id="@+id/bz_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:hint="@string/_10_00000000"
-            android:textColorHint="#546E7A"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toEndOf="@+id/laenge_tv"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/breit_tv"
-            app:layout_constraintTop_toBottomOf="@+id/breit_tv"
-            tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/bz_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="@string/_10_00000000"
+                android:textColorHint="#546E7A"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="@+id/laenge_tv"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/breit_tv"
+                app:layout_constraintTop_toBottomOf="@+id/breit_tv"
+                tools:ignore="MissingConstraints" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

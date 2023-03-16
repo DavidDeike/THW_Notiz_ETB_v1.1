@@ -1,170 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LinkFragment"
-    android:background="#F1ECE1">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <data>
+
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:context=".LinkFragment"
+        android:background="#F1ECE1">
 
-        <ImageView
-            android:id="@+id/wlogo_iv"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginEnd="80dp"
-            android:layout_marginRight="80dp"
-            android:layout_marginBottom="80dp"
-            android:contentDescription="@string/Link1"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/wlogo_iv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="80dp"
+                android:contentDescription="@string/Link1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/thw20"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="181dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.091"
+                app:srcCompat="@drawable/logo_thw_blau_1"
+                android:contentDescription="@string/LmS"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/link1_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:autoLink="web"
+                android:fontFamily="@font/open_sans_semibold"
+                android:linksClickable="true"
+                android:onClick="https://www.thw.de"
+                android:text="@string/bundesanstallt_techniches_hilfswerk"
+                android:textColor="#003399"
+                android:textSize="18sp"
+                app:backgroundTint="#80FFFF00"
+                app:layout_constraintBottom_toTopOf="@+id/link2_bt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                app:toggleCheckedStateOnClick="false"
+                tools:ignore="OnClick,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/link2_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autoLink="web"
+                android:fontFamily="@font/open_sans_semibold"
+                android:linksClickable="true"
+                android:onClick="https://extranet.thw.de/cae/servlet/path/common/LoginPages;jsessionid=E02CBDBDA3BDFA986E63B448A500D32C.2_cid379?view=renderLogin"
+                android:text="@string/extranet_thw"
+                android:textColor="#003399"
+                android:textSize="18sp"
+                app:backgroundTint="#80FFFF00"
+                app:layout_constraintBottom_toTopOf="@+id/link3_bt"
+                app:layout_constraintEnd_toEndOf="@+id/link1_bt"
+                app:layout_constraintStart_toStartOf="@+id/link1_bt"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                app:toggleCheckedStateOnClick="false"
+                tools:ignore="OnClick,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/link3_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autoLink="web"
+                android:fontFamily="@font/open_sans_semibold"
+                android:linksClickable="true"
+                android:onClick="https://www.bbk.bund.de/DE/Warnung-Vorsorge/Warn-App-NINA/warn-app-nina_node.html"
+                android:text="BBK"
+                android:textColor="#003399"
+                android:textSize="18sp"
+                app:backgroundTint="#80FFFF00"
+                app:layout_constraintBottom_toTopOf="@+id/link4_bt"
+                app:layout_constraintEnd_toEndOf="@+id/link2_bt"
+                app:layout_constraintStart_toStartOf="@+id/link2_bt"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                app:toggleCheckedStateOnClick="false"
+                tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/link4_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autoLink="web"
+                android:fontFamily="@font/open_sans_semibold"
+                android:linksClickable="true"
+                android:onClick="https://www.dwd.de/DE/Home/home_node.html  "
+                android:text="Deutscher Wetter Dinst"
+                android:textColor="#003399"
+                android:textSize="18sp"
+                app:backgroundTint="#80FFFF00"
+                app:layout_constraintBottom_toTopOf="@+id/link5_bt"
+                app:layout_constraintEnd_toEndOf="@+id/link3_bt"
+                app:layout_constraintStart_toStartOf="@+id/link3_bt"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                app:toggleCheckedStateOnClick="false"
+                tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/link5_bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="232dp"
+                android:autoLink="web"
+                android:fontFamily="@font/open_sans_semibold"
+                android:linksClickable="true"
+                android:onClick="https://www.divera247.com"
+                android:text="Divera 24/7"
+                android:textColor="#003399"
+                android:textSize="18sp"
+                app:backgroundTint="#80FFFF00"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/link4_bt"
+                app:layout_constraintStart_toStartOf="@+id/link4_bt"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                app:toggleCheckedStateOnClick="false"
+                tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/thw20"
-            tools:ignore="ContentDescription" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="181dp"
-            android:layout_height="51dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="2dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.091"
-            app:srcCompat="@drawable/logo_thw_blau_1"
-            android:contentDescription="@string/LmS"
-            tools:ignore="ContentDescription" />
-
-        <Button
-            android:id="@+id/link1_bt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:autoLink="web"
-            android:fontFamily="@font/open_sans_semibold"
-            android:linksClickable="true"
-            android:onClick="https://www.thw.de"
-            android:text="@string/bundesanstallt_techniches_hilfswerk"
-            android:textColor="#003399"
-            android:textSize="18sp"
-            app:backgroundTint="#80FFFF00"
-            app:layout_constraintBottom_toTopOf="@+id/link2_bt"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false"
-            tools:ignore="OnClick,VisualLintButtonSize" />
-
-        <Button
-            android:id="@+id/link2_bt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:autoLink="web"
-            android:fontFamily="@font/open_sans_semibold"
-            android:linksClickable="true"
-            android:onClick="https://extranet.thw.de/cae/servlet/path/common/LoginPages;jsessionid=E02CBDBDA3BDFA986E63B448A500D32C.2_cid379?view=renderLogin"
-            android:text="@string/extranet_thw"
-            android:textColor="#003399"
-            android:textSize="18sp"
-            app:backgroundTint="#80FFFF00"
-            app:layout_constraintBottom_toTopOf="@+id/link3_bt"
-            app:layout_constraintEnd_toEndOf="@+id/link1_bt"
-            app:layout_constraintStart_toStartOf="@+id/link1_bt"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false"
-            tools:ignore="OnClick,VisualLintButtonSize" />
-
-        <Button
-            android:id="@+id/link3_bt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:autoLink="web"
-            android:fontFamily="@font/open_sans_semibold"
-            android:linksClickable="true"
-            android:onClick="https://www.bbk.bund.de/DE/Warnung-Vorsorge/Warn-App-NINA/warn-app-nina_node.html"
-            android:text="BBK"
-            android:textColor="#003399"
-            android:textSize="18sp"
-            app:backgroundTint="#80FFFF00"
-            app:layout_constraintBottom_toTopOf="@+id/link4_bt"
-            app:layout_constraintEnd_toEndOf="@+id/link2_bt"
-            app:layout_constraintStart_toStartOf="@+id/link2_bt"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false"
-            tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
-
-        <Button
-            android:id="@+id/link4_bt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:autoLink="web"
-            android:fontFamily="@font/open_sans_semibold"
-            android:linksClickable="true"
-            android:onClick="https://www.dwd.de/DE/Home/home_node.html  "
-            android:text="Deutscher Wetter Dinst"
-            android:textColor="#003399"
-            android:textSize="18sp"
-            app:backgroundTint="#80FFFF00"
-            app:layout_constraintBottom_toTopOf="@+id/link5_bt"
-            app:layout_constraintEnd_toEndOf="@+id/link3_bt"
-            app:layout_constraintStart_toStartOf="@+id/link3_bt"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false"
-            tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
-
-        <Button
-            android:id="@+id/link5_bt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="232dp"
-            android:autoLink="web"
-            android:fontFamily="@font/open_sans_semibold"
-            android:linksClickable="true"
-            android:onClick="https://www.divera247.com"
-            android:text="Divera 24/7"
-            android:textColor="#003399"
-            android:textSize="18sp"
-            app:backgroundTint="#80FFFF00"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/link4_bt"
-            app:layout_constraintStart_toStartOf="@+id/link4_bt"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
-            app:toggleCheckedStateOnClick="false"
-            tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</FrameLayout>
+    </FrameLayout>
+</layout>

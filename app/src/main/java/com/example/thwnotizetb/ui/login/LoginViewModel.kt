@@ -18,7 +18,7 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
     val loginResult: LiveData<LoginResult> = _loginResult
 
     fun login(username: String, password: String) {
-        val result = loginRepository.login(username, password)
+        val result = loginRepository.login(username)
 
         if (result is Result.Success) {
             _loginResult.value =

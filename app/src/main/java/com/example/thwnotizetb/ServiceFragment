@@ -1,0 +1,50 @@
+package com.example.thwnotizetb
+
+import android.os.Bundle
+import android.os.Parcel
+import android.os.Parcelable
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.example.thwnotizetb.databinding.StartFragmentBinding
+
+
+class ServiceFragment : Fragment(), Parcelable {
+
+    private var _binding: StartFragmentBinding? = null
+
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+
+        _binding = StartFragmentBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    override fun writeToParcel(parcel: Parcel, flags: Int) {
+
+    }
+
+    override fun describeContents(): Int {
+        return 0
+    }
+
+    companion object CREATOR : Parcelable.Creator<ServiceFragment> {
+        override fun createFromParcel(parcel: Parcel): ServiceFragment {
+            return com.example.thwnotizetb.ServiceFragment()
+        }
+
+        override fun newArray(size: Int): Array<ServiceFragment?> {
+            return arrayOfNulls(size)
+        }
+    }
+}

@@ -30,4 +30,12 @@
     <string name="logo">logo</string>
     <string name="_10_00000000">10.00000000</string>
     <string name="textview">TextView</string>
+    <string name="allow" />
+    <string name="cancel" />
+    <string name="message_permission_denied" />
+    <string name="title_permission_denied" />
+    <string name="title_permission_permanently_denied" />
+    <string name="message_permission_permanently_denied" />
+    <string name="not_now" />
+    <string name="settings" />
 </resources>
